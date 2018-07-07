@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style>
+        .muted {
+            margin-top: 15%;
+        }
+
+        h4 {
+            margin-top: 2%;
+            min-height: 20px;
+            padding: 19px;
+            margin-bottom: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #e3e3e3;
+            border-radius: 4px;
+        }
+
+        .sad {
+            margin-left: 21%;
+            width: 175px;
+        }
+
+        .bad {
+            margin-left: 2%;
+            width: 175px;
+        }
+
+    </style>
+
+    <link rel="shortcut icon" type="image/x-icon" href="download.png" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-primary">Bookmarker
+            <span class="badge badge-primary">+</span>
+        </h1>
+        <div class="fixed">
+            <h3 class="muted">Bookmarker</h3>
+
+            <label for="basic-url" class="label">Site Name</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">Google</span>
+                </div>
+                <input type="text" class="form-control" id="name basic-url" aria-describedby="basic-addon3">
+            </div>
+
+            <label for="basic-url" class="label">Site URL</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">https://google.com/</span>
+                </div>
+                <input type="text" class="form-control" id="url basic-url" aria-describedby="basic-addon3">
+            </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick='bookmarker()'>Submit</button>
+        </div>
+        <div class="row marketing">
+            <div class="col-lg-12" id="div">
+                <h4>Google
+                    <a href="https://www.google.com" class="sad btn btn-primary" target="_blank">Visit</a>
+                    <button class="bad btn btn-danger">Delete</button>
+                </h4>
+                <h4>Wix
+                    <a href="https://www.wix.com" class="sad btn btn-primary" target="_blank">Visit</a>
+                    <button class="bad btn btn-danger">Delete</button>
+                </h4>
+                <h4>Facebook
+                    <a href="https://www.Facebook.com/moiz.memon.189" class="sad btn btn-primary" target="_blank">Visit</a>
+                    <button class="bad btn btn-danger">Delete</button>
+                </h4>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
